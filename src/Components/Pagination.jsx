@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import img1 from "../Images/1.webp";
 import img2 from "../Images/2.webp";
 import img3 from "../Images/3.webp";
@@ -63,11 +63,49 @@ export default function Pagination() {
     }
     ]);
 
+    // states
+    const [pageCount, setPageCount] = useState(1);
+    const [firstPro, setFirstPro] = useState(0);
+    const [LastPro, setlastPro] = useState(4);
+    // ref
+    const prevBtn = useRef(null);
+    const nextBtn = useRef(null);
+
+
+
+    useEffect(() => {
+        if (firstPro <= 0 && prevBtn.current) {
+            prevBtn.current.disabled = true;
+        }
+        else {
+            prevBtn.current.disabled = false;
+        }
+        if (LastPro >= product.length && nextBtn.current) {
+            nextBtn.current.disabled = true;
+        }
+        else {
+            nextBtn.current.disabled = false;
+        }
+    })
+
+
+    const prevPage = () => {
+        setPageCount(pageCount - 1);
+        setFirstPro(firstPro - 4);
+        setlastPro(LastPro - 4);
+    }
+
+    const nextPage = () => {
+        setPageCount(pageCount + 1);
+        setFirstPro(firstPro + 4);
+        setlastPro(LastPro + 4);
+    }
+
     return (
         <>
             <div className="container">
                 <div className="row">
-                    {product.map((product, index) => {
+                    {product.slice(firstPro, LastPro).map((product, index) => {
                         return (
                             <div className="col-3 mb-3" key={index}>
                                 <img src={product.img} alt="{Image}" className="card-img-top img-fluid my-2 rounded rounded-3" />
@@ -83,13 +121,8 @@ export default function Pagination() {
                 </div>
             </div>
             <div className="text-center mt-3">
-                <ul className="list-unstyled rounded">
-                    <li className="btn bg-danger-subtle rounded-0"><a href="#" className="text-decoration-none text-dark">Prev</a></li>
-                    <li className="btn bg-danger-subtle rounded-0"><a href="#" className="text-decoration-none text-dark">1</a></li>
-                    <li className="btn bg-danger-subtle rounded-0"><a href="#" className="text-decoration-none text-dark">2</a></li>
-                    <li className="btn bg-danger-subtle rounded-0"><a href="#" className="text-decoration-none text-dark">3</a></li>
-                    <li className="btn bg-danger-subtle rounded-0"><a href="#" className="text-decoration-none text-dark">Next</a></li>
-                </ul>
+                <button className="btn border btn-danger" onClick={prevPage} ref={prevBtn} >Prev</button>
+                <button className="btn border btn-danger" onClick={nextPage} ref={nextBtn} >Next</button>
             </div>
         </>
     );
