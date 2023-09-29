@@ -10,9 +10,9 @@ function App() {
     <>
       {/* <Pagination /> */}
       {/* <Effect /> */}
-      <CountDown />
+      {/* <CountDown /> */}
       {/* <ControlComponents /> */}
-      {/* <Comment /> */}
+      <Comment />
     </>
   );
 }
