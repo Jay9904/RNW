@@ -8,7 +8,6 @@ export default function Comments() {
     const nameInput = useRef();
     const commentInput = useRef();
 
-
     const commit = (e) => {
         if (nameInput.current.value === "") {
             setNameBlank("FILL IT");
@@ -21,7 +20,6 @@ export default function Comments() {
             e.preventDefault();
             e.target.reset();
         }
-
     }
 
     const Card = (props) => {
