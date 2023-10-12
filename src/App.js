@@ -13,6 +13,9 @@ import Home from './Routing/Home';
 import About from './Routing/About';
 import Shop from './Routing/Shop';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Page404 from './Routing/Page404';
+import Student from './Routing/Student';
+import StudentDetails from './Routing/StudentDetails';
 
 function App() {
   return (
@@ -23,15 +26,19 @@ function App() {
       {/* <ControlComponents /> */}
       {/* <Comment /> */}
       {/* <LocalStorage /> */}
-      <FormPR />
-      {/* <BrowserRouter>
+      {/* <FormPR /> */}
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path='/student' element={<Student />} />
+          <Route path='/student/view/:id' element={<StudentDetails />} />
+          <Route path='/student/edit/:id' element={<StudentDetails />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   );
 }
