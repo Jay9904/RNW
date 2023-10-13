@@ -8,8 +8,7 @@ export default function Student() {
 
     const handleDelete = (e, index) => {
         e.preventDefault();
-        const newData = [...stData.slice(0, index), ...stData.slice(index + 1)];
-        setStData(newData);
+        setStData([...stData.slice(0, index), ...stData.slice(index + 1)]);
     }
 
     return (
