@@ -43,7 +43,6 @@ export default function FormPR() {
         if (validation()) {
 
             if (isEdit) {
-
                 const newList = data.map((st, index) => {
                     if (index == editId) {
                         return input;

@@ -1,6 +1,30 @@
 .hours,
 .minuts,
 .seconds {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 70px;
+}
+
+.shadow-mn {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.shadow-mn-1 {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+body {
+    background: #9d95ff;
+}
+
+.form-control-mn {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.bg-offwhite {
+    background-color: #fffce1;
 }

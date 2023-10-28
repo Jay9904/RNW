@@ -16,6 +16,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Page404 from './Routing/Page404';
 import Student from './Routing/Student';
 import StudentDetails from './Routing/StudentDetails';
+import Vehicle from './Components/Vehicle';
+import Login from './Routing/Login';
+import SignUp from './Routing/SignUp';
+import UpdateUser from './Routing/UpdateUser';
+import Main from './Test2/Main';
 
 function App() {
   return (
@@ -34,11 +39,17 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
           <Route path='/student' element={<Student />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/student/:msg' element={<Student />} />
           <Route path='/student/view/:id' element={<StudentDetails />} />
-          <Route path='/student/edit/:id' element={<StudentDetails />} />
+          <Route path='/student/edit/:id' element={<UpdateUser />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/login/:msg' element={<Login />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
+      {/* <Vehicle /> */}
+      {/* <Main />   */}
     </>
   );
 }
