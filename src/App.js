@@ -21,6 +21,9 @@ import Login from './Routing/Login';
 import SignUp from './Routing/SignUp';
 import UpdateUser from './Routing/UpdateUser';
 import Main from './Test2/Main';
+import UseMemoEx from './UseMemo/UseMemoEx';
+import UseContext from './UseContext/UseContext';
+import PR from './Components/PR';
 
 function App() {
   return (
@@ -32,7 +35,7 @@ function App() {
       {/* <Comment /> */}
       {/* <LocalStorage /> */}
       {/* <FormPR /> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -47,9 +50,12 @@ function App() {
           <Route path='/login/:msg' element={<Login />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       {/* <Vehicle /> */}
       {/* <Main />   */}
+      {/* <UseMemoEx /> */}
+      {/* <UseContext /> */}
+      <PR />
     </>
   );
 }
