@@ -44,7 +44,7 @@ export default function PR() {
             if (city === "all") {
                 return true;
             }
-           return item.address === city;
+            return item.address === city;
         });
         setFilterData(newList);
     }

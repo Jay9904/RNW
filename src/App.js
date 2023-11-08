@@ -52,10 +52,10 @@ function App() {
         </Routes>
       </BrowserRouter> */}
       {/* <Vehicle /> */}
-      {/* <Main />   */}
+      <Main />  
       {/* <UseMemoEx /> */}
       {/* <UseContext /> */}
-      <PR />
+      {/* <PR /> */}
     </>
   );
 }
