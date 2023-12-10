@@ -1,0 +1,85 @@
+{
+  "signup": [
+    {
+      "name": "jay",
+      "email": "jay@gmail.com",
+      "password": "jay123",
+      "id": 1
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "password": "raj123",
+      "id": 2
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "password": "raj123",
+      "id": 3
+    },
+    {
+      "name": "rakesh",
+      "email": "rakesh@gmail.com",
+      "password": "rakesh123",
+      "id": 6
+    },
+    {
+      "name": "rajesh",
+      "email": "rajesh@gmail.com",
+      "password": "rajesh123",
+      "id": 7
+    },
+    {
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "ram123",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Printed Shirt",
+      "type": "Shirt",
+      "price": 1100,
+      "img": "https://thehouseofrare.com/cdn/shop/products/HERO_76c59c07-ac65-40f5-96e4-1de84fcdee92_765x.jpg?v=1671640945"
+    },
+    {
+      "id": 2,
+      "name": "Solid Shirt",
+      "type": "Shirt",
+      "price": 1500,
+      "img": "https://thehouseofrare.com/cdn/shop/files/Hero_ca10e709-0c1f-4653-b006-b128b086e833_765x.jpg?v=1683532963"
+    },
+    {
+      "id": 3,
+      "name": "Stripted Shirt",
+      "type": "Shirt",
+      "price": 800,
+      "img": "https://thehouseofrare.com/cdn/shop/products/IMG_0268_0d3b52bc-60a0-45e6-aa90-6bbdc0887ed5_765x.jpg?v=1671640610"
+    },
+    {
+      "id": 4,
+      "name": "Printed Shirt",
+      "type": "Shirt",
+      "price": 900,
+      "img": "https://thehouseofrare.com/cdn/shop/files/HOLAND-DK-OLIVE3399_765x.jpg?v=1693473325"
+    },
+    {
+      "id": 5,
+      "name": "Solid Shirt",
+      "type": "Shirt",
+      "price": 1200,
+      "img": "https://thehouseofrare.com/cdn/shop/files/SALFORD-WHITE0232HERO_765x.jpg?v=1694692720"
+    },
+    {
+      "id": 6,
+      "name": "Khadi Shirt",
+      "type": "Shirt",
+      "price": 1300,
+      "img": "https://thehouseofrare.com/cdn/shop/products/IMG_0043_4d81c6fa-5783-4baa-81f2-43b183e05466_765x.jpg?v=1697273725"
+    }
+  ],
+  "cart": []
+}
